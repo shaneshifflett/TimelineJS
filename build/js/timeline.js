@@ -8831,10 +8831,11 @@ if(typeof VMM.Timeline != 'undefined' && typeof VMM.Timeline.TimeNav == 'undefin
 					_largest_pos = int_obj.relative_pos.begin;
 				}
 				
-				// Add the time string to the element and position it.
-				VMM.appendElement(int_obj.element, int_obj.date_string);
-				VMM.Lib.css(int_obj.element, "text-indent", -(VMM.Lib.width(int_obj.element)/2));
-				VMM.Lib.css(int_obj.element, "opacity", "0");
+				if(int_obj.date_string < 2015 && int_obj.date_string >= 1983){
+					VMM.appendElement(int_obj.element, int_obj.date_string);
+					VMM.Lib.css(int_obj.element, "text-indent", -(VMM.Lib.width(int_obj.element)/2));
+					VMM.Lib.css(int_obj.element, "opacity", "0");
+				}
 				
 				// add the interval element to the array
 				_array.push(int_obj);
