@@ -8906,8 +8906,8 @@ if(typeof VMM.Timeline != 'undefined' && typeof VMM.Timeline.TimeNav == 'undefin
 				if (config.start_page) {
 					VMM.Lib.css($toolbar, "top", 27);
 				}
-				$zoomin		= VMM.appendAndGetElement($toolbar, "<div>", "zoom-in", "<div class='icon'></div>");
-				$zoomout	= VMM.appendAndGetElement($toolbar, "<div>", "zoom-out", "<div class='icon'></div>");
+				//$zoomin		= VMM.appendAndGetElement($toolbar, "<div>", "zoom-in", "<div class='icon'></div>");
+				//$zoomout	= VMM.appendAndGetElement($toolbar, "<div>", "zoom-out", "<div class='icon'></div>");
 				// ZOOM EVENTS
 				VMM.bindEvent($zoomin, onZoomIn, "click");
 				VMM.bindEvent($zoomout, onZoomOut, "click");
